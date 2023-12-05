@@ -1,0 +1,176 @@
+@use '../custom' as *;
+
+
+
+/* Genaral */
+.container{
+    width: 75%!important;
+    margin: 0 auto;
+
+  .row-75{
+    width: 75%!important;
+     }
+  }
+  /* Styles for screens with a maximum width of 600 pixels */
+
+    .container{
+
+        @include media-breakpoint-down (lg){
+            width: 100%!important;
+            margin: 0 auto;
+        }
+    
+      .row-75{  
+        @include media-breakpoint-down (lg){
+            width: 100%!important;
+            margin: 0 auto;
+        }
+      }
+
+
+  }
+
+  .w-55{
+    @include media-breakpoint-down (lg){
+        width: 100%;
+    }
+  }
+  .w-45{
+    @include media-breakpoint-down (lg){
+        width: 100%;
+    }
+  }
+
+  .mt-110{
+    margin-top: 110px;
+  }
+  .mt-120{
+    margin-top: 120px;
+  }
+  .mt-150{
+    margin-top: 150px;
+  }
+  .mt-200{
+    margin-top: 200px;
+  }
+  .mt-250{
+    margin-top: 250px;
+  }
+  .w-55{
+    width: 55%;
+  }
+  .w-45{
+    width: 45%;
+  }
+  section{
+    margin-top: 132px!important;
+    margin-bottom: 65px!important;
+  }
+
+  .title-center {
+
+    p{
+        font-family: 'Teko',sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: #ED3B3B;
+
+    }
+  }
+
+  .sub-title-center {
+    h2{
+        font-family: 'Teko',sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 60px;
+        color: #151515;
+    }
+  }
+
+  .title {
+
+    p{
+        font-family: 'Teko',sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #ED3B3B;
+    }
+  }
+
+  .sub-title {
+
+    h2{
+        font-family: 'Teko',sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 60px;
+        color: #151515;
+    }
+  }
+
+  /* Styles for screens with a maximum width of 600 pixels */
+    .title-center {
+        p{
+            
+        @include media-breakpoint-down (md){
+            font-size: 15px;
+            line-height: 25px;
+
+        }
+    }
+}
+
+    .sub-title-center {
+        h2{            
+            @include media-breakpoint-down (md){
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 50px;
+    
+            }
+        }
+    }
+    .title{
+        p{           
+            @include media-breakpoint-down (md){
+
+                font-size: 15px;
+                line-height: 25px;
+    
+            }
+        }
+    }
+
+    .sub-title{
+     h2{      
+        @include media-breakpoint-down (md){
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 50px;
+
+        }
+        }
+    }
+
+      
+    .button{
+        padding: 10px 20px;
+        background: $primary;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+      }
+  /* End Genaral */

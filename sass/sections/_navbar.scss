@@ -1,0 +1,168 @@
+@use '../custom' as *;
+@use '../components/css-reset' as *;
+@use '../components/general' as *;
+@use '../components/mixins' as *;
+
+// TOPBAR START
+.topbar {
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* responsive code for topbar */
+    .topbar {
+    @include media-breakpoint-down (md){
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        img{
+            display: none;
+        }
+    }
+  }
+// TOPBAR END
+
+
+// NAVBAR START
+.custom-navbar {
+    width: 100%;
+    transition: width 0.3s ease;
+    z-index: 9999999;
+
+    @include media-breakpoint-down (md){
+        background-color: $black!important;
+    }
+
+    .border-line:before{
+        content: "";
+        display: block;
+        border-left: 1px solid #666; /* Change the color as needed */
+        height: 70px; /* Adjust the height as needed */
+        margin: 0px; /* Adjust the margin as needed */
+    }
+  }
+  .sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 19px 0;
+    width: 100%;
+    z-index: 9999999;
+
+    @include media-breakpoint-down (md){
+        background-color: $black!important;
+    }
+  }
+  /* .sticky-navbar .navbar-dark .navbar-nav .nav-link {
+    color: red;
+  } */
+  
+   .nav-link{
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 30px!important;
+    border: none;
+    }
+  
+    .navbar-dark{ 
+        .navbar-nav {
+            .nav-link {
+                color: #151515;
+
+                @include media-breakpoint-down (md){
+                    color: #fff;
+                }
+        }
+      }
+    }    
+
+    .navbar-dark{ 
+        .navbar-nav {
+            .nav-link:hover {
+                color: $primary;
+                border: none;
+        }
+      }
+    }
+
+    .active{
+      color: $primary;
+    }
+
+
+    /* Style the dropdown container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Style the button that will be used to toggle the dropdown content */
+      .dropbtn {
+        font-family: 'Manrope',sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 22px;
+        text-transform: capitalize;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-left: 30px!important;
+        color: #151515;
+        background: none;
+        border: none;
+        @include media-breakpoint-down (md){
+            color: #fff;
+        }
+      }
+      
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #373737;
+        padding: 20px 40px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Style the links inside the dropdown */
+      .dropdown-content a {
+        font-family: 'Manrope',sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        border: none;
+        color: #fff; 
+        padding: 12px 20px;
+        text-decoration: none;
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,0.1);
+
+        @include media-breakpoint-down (md){
+            color: #fff;
+        }
+      }
+      
+      /* Change color on hover */
+      .dropdown-content a:hover {
+        padding-left: 5px;
+        color: $primary;
+        transition: 1s;
+      }
+      
+      /* Show the dropdown content on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+// NAVBAR END  

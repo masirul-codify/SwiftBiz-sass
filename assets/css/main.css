@@ -1,0 +1,1329 @@
+/**
+  * Template Name: SwiftBiz
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://devmasirul.com/SwiftBiz-bootstrap-business-website-template/
+  * Author: devmasirul.com
+  * License: https://devmasirul.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Set main reusable colors and fonts using CSS variables
+# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+
+
+/*--------------------------------------------------------------
+# History area
+--------------------------------------------------------------*/
+.history{
+  background: linear-gradient(to right, rgba(237, 59, 59, 0.72), rgba(0, 0, 0, 0.7)), url('../images/history/Rectangle\ 12.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px; /* Set the height or adjust as needed */
+  width: 100%; /* Set the width or adjust as needed */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: inherit;
+}
+
+.main-card{
+  /* position: absolute; */
+  display:  inline-block;
+  margin-top: 100px;
+}
+
+.history-card{
+ position: relative;
+ background: #FFFFFF;
+ z-index: 11;
+}
+
+.card-contents{
+  padding: 2rem;
+}
+
+.history-pattern{
+  background-image: url('../images/history/pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 60%;
+  z-index: 10;
+}
+
+.feature{
+  padding: 10px 30px;
+  background: linear-gradient(to right, #F2EEEC, #fff);
+}
+
+.feature:hover .key{
+  color: var(--primary-color);
+}
+.key-feature{
+  margin-top: 10px;
+}
+.feature .icon{
+ font-size: 25px;
+ color: var(--primary-color)
+}
+.feature .key{
+font-family: 'Teko',sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0.1em;
+text-align: center;
+margin-left: 15px;
+color:#151515;
+}
+
+.history .icon .icn i{
+  font-size: 70px;
+  color: var(--primary-color);
+}
+.content-and-icon{
+  padding: 2rem;
+}
+
+.history .content p{
+  font-family: 'Manrope';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.history-counter{
+  padding-top: 290px ;
+  padding-bottom: 80px ;
+}
+.h-counter .icon i {
+  padding-right: 15px;
+  color: #fff;
+  font-size: 90px;
+}
+.h-counter .content .bold{
+  font-family: 'Teko';
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.h-counter .content .s-bold{
+  font-family: 'Teko';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+}
+
+.c-left-image{
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 767.98px) {
+
+.card-contents{
+  padding: .5rem;
+}
+
+  .main-card{
+    margin-top: 50px!important;
+  }
+
+
+  .feature{
+    padding: 5px 15px!important;
+    background: linear-gradient(to right, #F2EEEC, #fff);
+  }
+
+  .feature .icon{
+   font-size: 15px;
+   color: var(--primary-color)
+  }
+  .feature .key{
+  font-family: 'Teko',sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-left: 15px;
+  color:#151515;
+  }
+
+  .history .icon .icn i{
+    font-size: 50px;
+    color: var(--primary-color);
+  }
+
+  .content-and-icon{
+    padding: .5rem;
+  }
+
+  .history .content p{
+    font-family: 'Manrope';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .history-counter{
+    padding-top: 350px ;
+    padding-bottom: 80px ;
+  }
+  .h-counter .icon i {
+    padding-right: 12px;
+    color: #fff;
+    font-size: 50px;
+  }
+  .h-counter .content .bold{
+    font-family: 'Teko';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+
+  .h-counter .content .s-bold{
+    font-family: 'Teko';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #fff;
+  }
+
+  .c-left-image{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Growth section start
+--------------------------------------------------------------*/
+.red-bold{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ED3B3B;
+}
+.growth-content-header{
+  padding:2rem;
+}
+.growth-description{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+.growth-icon .icon{
+  background: var(--primary-color);
+  padding: 25px;
+}
+.growth-icon .text h5{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151515;
+}
+.growth-icon .text p{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+.inner-div {
+  position: absolute;
+  right: 0px;
+  left: auto;
+  top: 80px;
+  z-index: 1; /* Set z-index to ensure it's above other elements */
+}
+
+.bg{
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+
+
+/* Styles for screens with a maximum width of 767.98 pixels */
+@media only screen and (max-width: 767.98px) {
+  .growth-content-header{
+    padding: .5rem;
+  }
+
+  .img-none{
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Project section start
+--------------------------------------------------------------*/
+:root {
+  --theme-color: #ED3B3B;
+  --white-color: #fff;
+  --secondary-color: #1F1F1F;
+}
+
+.project-section .title-box {
+  margin-left: 16%!important;
+}
+
+  h5.sec-sub-title {
+    font-family: 'Teko';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.3em;
+    color: #ED3B3B;
+}
+
+
+
+h2.sec-title {
+    font-family: 'Teko';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    color: #18191D;
+}
+
+.project-section {
+  background: #F2F3F6;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  position: relative;
+}
+
+.projects .image {
+  position: relative;
+  border-radius: 15px;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.projects .image img {
+  width: 100%;
+  position: relative;
+}
+
+.projects .image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 15px;
+  z-index: 1;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.projects:hover .image:before {
+  height: 100%;
+  background: -o-linear-gradient(214deg, rgba(237, 59, 59, 0.70)  0%,rgba(237, 59, 59, 0.470)100%);
+  background: linear-gradient(214deg, rgba(237, 59, 59, 0.70)  0%,rgba(237, 59, 59, 0.470)100%);
+}
+
+.projects {
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .content-box {
+  background: var(--theme-color);
+  border-radius: 5px 5px 0px 0px;
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  overflow: hidden;
+  z-index: 1;
+  transform: translateY(50%);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.projects:hover .content-box {
+  transform: translateY(-0%);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  border-radius: 0%;
+}
+
+.projects .content-box h6 {
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.projects .content-box h4 {
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white-color);
+}
+
+.projects .icon-box {
+  position: relative;
+}
+
+.projects .icon-box i {
+  background: var(--white-color);
+  color: var(--secondary-color);
+  padding: 12px 12px;
+  border-radius: 50%;
+  font-size: 24px;
+  position: absolute;
+  top: -90px;
+  right: 0px;
+  line-height: 20px;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.projects .icon-box i:hover {
+  color: var(--theme-color);
+}
+
+.project-section .owl-nav {
+  position: absolute;
+  top: -133px;
+  right: 399px;
+}
+
+.project-section .owl-nav i {
+  background: var(--white-color);
+  color: #000;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 0px;
+  margin-right: 0px!important;
+}
+
+.project-section .owl-nav .fa-arrow-left:hover {
+  background: var(--theme-color);
+  color: var(--white-color);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.project-section .owl-nav .fa-arrow-right:hover {
+  background: var(--theme-color);
+  color: var(--white-color);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1350px){
+
+
+}
+
+@media only screen and (max-width: 991px){
+
+
+
+}
+
+
+/* Styles for screens with a maximum width of 767.98 pixels */
+@media only screen and (max-width: 767.98px) {
+
+  .project-section .owl-nav {
+    display: none;
+ }
+
+
+.projects .content-box h6 {
+  font-family: 'Teko';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.projects .content-box h4 {
+  font-family: 'Manrope';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white-color);
+}
+
+
+.projects .icon-box i {
+  top: 90px;
+}
+
+
+.projects .content-box {
+  transform: translateY(90%);
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 425px){
+
+
+
+}
+
+
+  .owl-dots-none .owl-dots,
+  .owl-nav-none .owl-nav{
+    display: none !important;
+  }
+
+  .owl-nav button{
+    background: transparent;
+  }
+
+/* project area end */
+
+
+
+/*--------------------------------------------------------------
+# Testimonial area
+--------------------------------------------------------------*/
+.star-icon i{
+  font-size: 25px;
+  padding: 10px;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.star-rating h2{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #151515;
+}
+.bold{
+  font-family: 'Teko';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-color)
+}
+.comment p{
+  font-family: 'Teko';
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color:#151515;
+}
+.pbold{
+  color: var(--primary-color);
+}
+.swiper {
+  width: 100%;
+  position: relative;
+  height: 420px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color:  var(--primary-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--primary-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+
+.swiper-button-next{
+  margin-top:3px!important;
+  font-size: 20px!important;
+  position: absolute;
+  left: auto!important;
+  right: 78%!important;
+  top: 5%!important;
+  padding:25px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  width: 20px!important;
+  height:15px!important;
+}
+
+.swiper-button-prev{
+  margin-top:3px!important;
+  font-size: 20px!important;
+  position: absolute;
+  left: 0%!important;
+  right: auto!important;
+  top: 5%!important;
+  padding:25px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  width: 20px!important;
+  height:15px!important;
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--primary-color)!important;
+}
+
+
+@media only screen and (max-width: 767.98px){
+  .comment p{
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .star-icon i{
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .star-rating h2{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .swiper-button-next{
+    left: auto!important;
+    right: 65%!important;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Text sliding area
+--------------------------------------------------------------*/
+.slide-container {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.red-text{
+  font-family: 'Teko';
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-right: 20px; /* Adjust spacing between texts */
+  color: var(--primary-color);
+}
+.dark-text{
+  font-family: 'Teko';
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-right: 20px; /* Adjust spacing between texts */
+  color: #151515;
+}
+
+
+.otto-red {
+  font-family: 'Teko';
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-right: 20px;
+  color: rgba(89, 39, 19, 0.992);
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.otto {
+  font-family: 'Teko';
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-right: 20px;
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.slide-text {
+  margin: 0;
+  white-space: nowrap;
+  animation: slideText 75s linear infinite;
+}
+
+.slide-text-revert{
+  margin: 0;
+  white-space: nowrap;
+  animation: slideTextrevert 65s linear infinite;
+}
+
+@keyframes slideText {
+    0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+@keyframes slideTextrevert {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+
+
+@media only screen and (max-width: 767.98px){
+
+  .red-text{
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .dark-text{
+    font-size: 50px;
+    line-height: 30px;
+  }
+
+
+  .otto-red {
+    font-size: 50px;
+    line-height: 30px;
+  }
+  .otto {
+    font-size: 50px;
+    line-height: 30px;
+  }
+}
+/*--------------------------------------------------------------
+# Benifit area
+--------------------------------------------------------------*/
+.frame-1{
+  position: absolute;
+  top: 50%;
+  width:50%;
+  height: 20%;
+  z-index: 9;
+}
+
+.frame-2{
+  position: absolute;
+  top: 0%;
+  width:50%;
+  height: 20%;
+  z-index: 9;
+}
+
+
+.main-container {
+  position: relative;
+  height:650px;
+}
+
+.main-container2 {
+  position: relative;
+  height:650px;
+}
+
+.inner-div1, .inner-div2 {
+  position: absolute;
+}
+
+.inner-div1 {
+  top: 115px;
+  left: 130px;
+  z-index: 2; /* Set z-index to ensure it's above other elements */
+}
+
+.inner-div2 {
+  right: 0px;
+  z-index: 1; /* Set z-index to ensure it's above other elements */
+}
+
+.right-img{
+  height:650px;
+}
+.pattern{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:80%;
+  height: 100%;
+  z-index: 2;
+}
+
+.benefit-content{
+  position: absolute;
+  top: 2%;
+  right: 0;
+  width: 75%;
+  z-index:999999;
+}
+
+.benefit-icon .icon{
+  padding: 30px 35px;
+  background: var(--primary-color);
+}
+.benefit-icon .text{
+  padding-left: 30px;
+}
+.benefit-icon .text h5{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151515;
+}
+.benefit-icon .text p{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+
+
+
+
+@media only screen and (max-width: 767.98px){
+
+  .inner-div1 {
+    top: 0px;
+    left: 0px;
+    z-index: 2; /* Set z-index to ensure it's above other elements */
+  }
+
+  .inner-div2 {
+    top: 650px;
+    z-index: 5;
+  }
+
+  .main-container2 {
+    height:1250px;
+  }
+
+  .benefit-content{
+    width: 100%;
+  }
+
+  .pattern{
+    right: 70%;
+    width:100%;
+    height: 70%;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 575.98px){
+
+  .inner-div2 {
+    top: 480px;
+  }
+
+  .main-container2 {
+    height:1550px;
+  }
+
+  .right-img{
+    height: 1050px;
+  }
+
+}
+/*--------------------------------------------------------------
+# Blog area
+--------------------------------------------------------------*/
+
+.blog-content h3{
+font-family: 'Teko',sans-serif;
+font-size: 30px;
+font-weight: 500;
+line-height: 35px;
+letter-spacing: 0em;
+text-align: left;
+color: #151515;
+}
+
+.blog-content .linked-area {
+  background:#F2F2F6;
+}
+
+.blog-content .linked-area h5{
+font-family: 'Teko';
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #151515;
+}
+
+.blog-content .linked-area .icon i{
+background:#ED3B3B;
+color: #fff;
+}
+
+.blog-content .info-area .calendar{
+  bottom: 39%;
+}
+
+
+
+.blog-content .info-area .calendar .date{
+  font-family: 'Teko';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 15px 30px;
+  background: var(--primary-color);
+  color: #fff;
+}
+.blog-content .info-area .calendar .m-year{
+  font-family: 'Manrope';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px 30px;
+  background:#151515;
+  color: #fff;
+}
+.blog-content .info-area .profile .pro-icon i{
+  margin-right: 10px;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+.blog-content .info-area .profile .pro-text{
+font-family: 'Manrope';
+font-size: 14px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+margin-right: 10px;
+color:#666666;
+}
+.blog-content .info-area .comment .c-icon i{
+  margin-right: 10px;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+.blog-content .info-area .comment .c-text{
+  font-family: 'Manrope';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:#666666;
+}
+
+
+
+/*--------------------------------------------------------------
+# Map area
+--------------------------------------------------------------*/
+.map{
+  /* background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0.7)); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+  position: inherit;
+}
+
+.main-card{
+  /* position: absolute; */
+  display:  inline-block;
+  margin-top: 150px;
+}
+
+.map-card{
+ position: relative;
+ background: #FFFFFF;
+ z-index: 11;
+}
+
+.map-pattern{
+  background-image: url('../images/map/pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  z-index: -1;
+}
+
+.feature{
+  padding: 10px 30px;
+  background: linear-gradient(to right, #F2EEEC, #fff);
+}
+
+.map .icon .icn i{
+  font-size: 70px;
+  color: var(--primary-color);
+}
+.map .content p{
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.map-counter{
+  padding-top: 50px ;
+}
+
+.c-right-image{
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+@media only screen and (max-width: 993px){
+  .map{
+    height: 1500px;
+  }
+
+}
+@media only screen and (max-width: 768px){
+  .map{
+    height: 1500px;
+  }
+  .c-right-image{
+    z-index: -2;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+ .footer{
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 992px){
+  .footer{
+    position: relative;
+    height: 110vh;
+    overflow: hidden;
+  }
+
+}
+@media only screen and (max-width: 800px){
+  .footer{
+    position: relative;
+    height: 115vh;
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  .footer{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+}
+.footer .footer-area {
+  background-image:  url('../images/map/map2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+.footer .footer-area .footer-info h3{
+  font-family: 'Teko',sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+
+}
+
+.footer .footer-area .footer-info h6{
+  font-family: 'Teko',sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  color: #fff;
+}
+
+.footer .footer-area .footer-info i{
+ color: #fff;
+}
+
+.footer-links h3{
+font-family: 'Teko',sans-serif;
+font-size: 30px;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0em;
+text-align: left;
+color: #fff;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  }
+.footer-links ul li a{
+  font-family: 'Manrope',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  text-decoration:none;
+  }
+
+
+  .footer-contact h5{
+    font-family: 'Manrope',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ED3B3B;
+    }
+
+
+
+  .footer-contact h4{
+    font-family: 'Teko',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    }
+
+
+
+  .footer-contact h3{
+  font-family: 'Teko',sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  }
+
+  .footer-contact  h6{
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    text-decoration:none;
+    }
+
+    .footer-bottom{
+      width: 100%;
+      height: 20%;
+      position: absolute;
+      bottom: 0!important;
+      background: #0C0C0C;
+    }
+
+
+
+/* scroll to top */
+
+.scroll-top i{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  display: none;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
+.scroll-top i.active {
+  display: block;
+  color: white!important;
+  z-index: 12;
+}

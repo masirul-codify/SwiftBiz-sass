@@ -1,0 +1,284 @@
+@use '../custom' as *;
+@use '../components/css-reset' as *;
+@use '../components/general' as *;
+@use '../components/typography' as *;
+@use '../components/mixins' as *;
+
+
+
+/*--------------------------------------------------------------
+# History area
+--------------------------------------------------------------*/
+.history{
+    background: linear-gradient(to right, rgba(237, 59, 59, 0.72), rgba(0, 0, 0, 0.7)), url('../images/history/Rectangle\ 12.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px; /* Set the height or adjust as needed */
+    width: 100%; /* Set the width or adjust as needed */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: inherit;
+  }
+
+  .main-card{
+    /* position: absolute; */
+    display:  inline-block;
+    margin-top: 200px;
+  }
+
+  .history-card{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   background: #FFFFFF;
+   z-index: 11;
+  }
+
+  .card-contents{
+    padding: 2rem;
+  }
+
+  .history-pattern{
+    background-image: url('../images/history/pattern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 60%;
+    z-index: 10;
+  }
+
+  .feature{
+    padding: 10px 30px;
+    background: linear-gradient(to right, #F2EEEC, #fff);
+  }
+
+  .feature:hover .key{
+    color: $primary-color;
+  }
+  .key-feature{
+    margin-top: 10px;
+  }
+  .feature .icon{
+   font-size: 25px;
+   color: $primary-color;
+  }
+  .feature .key{
+  font-family: 'Teko',sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-left: 15px;
+  color:#151515;
+  }
+
+  .history .icon .icn i{  
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 30px 40px;
+    font-size: 40px;
+    border-radius:50%;
+    color: $white;
+    background: linear-gradient(to right, #632A2C, $primary-color);
+  }
+
+  .border-animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6.5rem;
+    height: 6.5rem;
+    color: $black;
+    border: 0.55rem solid $primary-color;
+    border-radius: 50%;
+    animation: pulseBorder 2s linear infinite;
+
+
+    &--border-1{
+        animation-delay: 1.5s;
+    }
+
+    &--border-2{
+        animation-delay: 2s;
+    }
+}
+
+// PULSE BORDER
+@keyframes pulseBorder{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }   
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+  .content-and-icon{
+    padding: 2rem;
+    margin-top: 100px;
+    text-align:start;
+
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+  }
+
+  .history .content p{
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align:right;
+    color: #FFFFFF;
+  }
+
+  .history-counter{    
+    background: linear-gradient(to bottom, rgba(237,59, 59, 1), rgba(237,59, 59, 0.4)), url('../images/history/counter-one-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px; /* Set the height or adjust as needed */
+    width: 100%; /* Set the width or adjust as needed */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: inherit;
+    padding-top: 150px ;
+    padding-bottom: 80px ;
+  }
+  .h-counter .icon i {  
+    padding:30px 40px;
+    margin-right: 0.5rem;
+    font-size: 30px;
+    border-radius:50%;
+    color: $white;
+    background: linear-gradient(to bottom, #632A2C, $primary-color);
+  }
+  .h-counter .content .bold{
+    font-family: 'Teko';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+
+  .h-counter .content .s-bold{
+    font-family: 'Teko';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #fff;
+  }
+
+  .c-left-image{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  /* Styles for screens with a maximum width of 600 pixels */
+  @media only screen and (max-width: 767.98px) {
+
+  .card-contents{
+    padding: .5rem;
+  }
+
+    .main-card{
+      margin-top: 50px!important;
+    }
+
+
+    .feature{
+      padding: 5px 15px!important;
+      background: linear-gradient(to right, #F2EEEC, #fff);
+    }
+
+    .feature .icon{
+     font-size: 15px;
+     color: var(--primary-color)
+    }
+    .feature .key{
+    font-family: 'Teko',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-left: 15px;
+    color:#151515;
+    }
+
+    .history .icon .icn i{
+      font-size: 50px;
+      color: var(--primary-color);
+    }
+
+    .content-and-icon{
+      padding: .5rem;
+    }
+
+    .history .content p{
+      font-family: 'Manrope';
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .history-counter{
+      padding-top: 350px ;
+      padding-bottom: 80px ;
+    }
+    .h-counter .icon i {
+      padding-right: 12px;
+      color: #fff;
+      font-size: 50px;
+    }
+    .h-counter .content .bold{
+      font-family: 'Teko';
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 50px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fff;
+    }
+
+    .h-counter .content .s-bold{
+      font-family: 'Teko';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      color: #fff;
+    }
+
+    .c-left-image{
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  }

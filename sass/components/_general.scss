@@ -1,35 +1,7 @@
 @use '../custom' as *;
 
 
-
-/* Genaral */
-.container{
-    width: 75%!important;
-    margin: 0 auto;
-
-  .row-75{
-    width: 75%!important;
-     }
-  }
-  /* Styles for screens with a maximum width of 600 pixels */
-
-    .container{
-
-        @include media-breakpoint-down (lg){
-            width: 100%!important;
-            margin: 0 auto;
-        }
-
-      .row-75{
-        @include media-breakpoint-down (lg){
-            width: 100%!important;
-            margin: 0 auto;
-        }
-      }
-
-
-  }
-
+ 
   .w-55{
     @include media-breakpoint-down (lg){
         width: 100%;
@@ -121,11 +93,7 @@
   }
   .w-45{
     width: 45%;
-  }
-  section{
-    margin-top: 132px!important;
-    margin-bottom: 65px!important;
-  }
+  } 
 
   .title-center {
 

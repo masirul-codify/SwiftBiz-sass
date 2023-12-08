@@ -11862,29 +11862,6 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
-/* Genaral */
-.container {
-  width: 75% !important;
-  margin: 0 auto;
-}
-.container .row-75 {
-  width: 75% !important;
-}
-
-/* Styles for screens with a maximum width of 600 pixels */
-@media (max-width: 991.98px) {
-  .container {
-    width: 100% !important;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 991.98px) {
-  .container .row-75 {
-    width: 100% !important;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 991.98px) {
   .w-55 {
     width: 100%;
@@ -11999,11 +11976,6 @@ textarea.form-control-lg {
 
 .w-45 {
   width: 45%;
-}
-
-section {
-  margin-top: 132px !important;
-  margin-bottom: 65px !important;
 }
 
 .title-center p {
@@ -12228,6 +12200,7 @@ section {
   transition: width 0.3s ease;
   z-index: 9999999;
   padding-left: 20px;
+  background: #fff;
 }
 @media (max-width: 767.98px) {
   .custom-navbar {
@@ -12253,6 +12226,7 @@ section {
   padding: 19px 0;
   width: 100%;
   z-index: 9999999;
+  background: #fff;
 }
 @media (max-width: 767.98px) {
   .sticky-navbar {
@@ -12273,7 +12247,7 @@ section {
   margin-right: 55px !important;
   border: none;
 }
-@media (max-width: 1370px) {
+@media (max-width: 1600px) {
   .nav-link {
     margin-right: 15px !important;
   }
@@ -12317,7 +12291,7 @@ section {
   background: none;
   border: none;
 }
-@media (max-width: 1370px) {
+@media (max-width: 1600px) {
   .dropbtn {
     margin-right: 15px !important;
   }
@@ -12478,24 +12452,6 @@ section {
   font-size: 3rem;
 }
 
-.companies {
-  padding: 0 0 5rem 0;
-}
-.companies_logo-box {
-  max-width: 100%;
-  height: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
-  text-align: center;
-  position: relative;
-}
-.companies_logo-box img {
-  height: 100%;
-}
-.companies_logo-box img:hover {
-  filter: grayscale(120);
-}
-
 .service-card {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%) !important;
   background-color: #E3DBD8;
@@ -12630,6 +12586,289 @@ section {
   background-color: #ED3B3B;
   border-radius: 50%;
   margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# History area
+--------------------------------------------------------------*/
+.history {
+  background: linear-gradient(to right, rgba(237, 59, 59, 0.72), rgba(0, 0, 0, 0.7)), url("../images/history/Rectangle 12.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px; /* Set the height or adjust as needed */
+  width: 100%; /* Set the width or adjust as needed */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: inherit;
+}
+
+.main-card {
+  /* position: absolute; */
+  display: inline-block;
+  margin-top: 200px;
+}
+
+.history-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #FFFFFF;
+  z-index: 11;
+}
+
+.card-contents {
+  padding: 2rem;
+}
+
+.history-pattern {
+  background-image: url("../images/history/pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 60%;
+  z-index: 10;
+}
+
+.feature {
+  padding: 10px 30px;
+  background: linear-gradient(to right, #F2EEEC, #fff);
+}
+
+.feature:hover .key {
+  color: #ED3B3B;
+}
+
+.key-feature {
+  margin-top: 10px;
+}
+
+.feature .icon {
+  font-size: 25px;
+  color: #ED3B3B;
+}
+
+.feature .key {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-left: 15px;
+  color: #151515;
+}
+
+.history .icon .icn i {
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 30px 40px;
+  font-size: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(to right, #632A2C, #ED3B3B);
+}
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6.5rem;
+  height: 6.5rem;
+  color: #000;
+  border: 0.55rem solid #ED3B3B;
+  border-radius: 50%;
+  animation: pulseBorder 2s linear infinite;
+}
+.border-animation--border-1 {
+  animation-delay: 1.5s;
+}
+.border-animation--border-2 {
+  animation-delay: 2s;
+}
+
+@keyframes pulseBorder {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.content-and-icon {
+  padding: 2rem;
+  margin-top: 100px;
+  text-align: start;
+}
+.content-and-icon .icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.history .content p {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.history-counter {
+  background: linear-gradient(to bottom, rgb(237, 59, 59), rgba(237, 59, 59, 0.4)), url("../images/history/counter-one-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px; /* Set the height or adjust as needed */
+  width: 100%; /* Set the width or adjust as needed */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: inherit;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+.h-counter .icon i {
+  padding: 30px 40px;
+  margin-right: 0.5rem;
+  font-size: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(to bottom, #632A2C, #ED3B3B);
+}
+
+.h-counter .content .bold {
+  font-family: "Teko";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.h-counter .content .s-bold {
+  font-family: "Teko";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+}
+
+.c-left-image {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 767.98px) {
+  .card-contents {
+    padding: 0.5rem;
+  }
+  .main-card {
+    margin-top: 50px !important;
+  }
+  .feature {
+    padding: 5px 15px !important;
+    background: linear-gradient(to right, #F2EEEC, #fff);
+  }
+  .feature .icon {
+    font-size: 15px;
+    color: var(--primary-color);
+  }
+  .feature .key {
+    font-family: "Teko", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-left: 15px;
+    color: #151515;
+  }
+  .history .icon .icn i {
+    font-size: 50px;
+    color: var(--primary-color);
+  }
+  .content-and-icon {
+    padding: 0.5rem;
+  }
+  .history .content p {
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .history-counter {
+    padding-top: 350px;
+    padding-bottom: 80px;
+  }
+  .h-counter .icon i {
+    padding-right: 12px;
+    color: #fff;
+    font-size: 50px;
+  }
+  .h-counter .content .bold {
+    font-family: "Teko";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  .h-counter .content .s-bold {
+    font-family: "Teko";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #fff;
+  }
+  .c-left-image {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+.companies {
+  padding: 0 0 5rem 0;
+}
+.companies_logo-box {
+  max-width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+.companies_logo-box img {
+  height: 100%;
+}
+.companies_logo-box img:hover {
+  filter: grayscale(120);
 }
 
 /*--------------------------------------------------------------

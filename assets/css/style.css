@@ -12174,6 +12174,26 @@ textarea.form-control-lg {
   margin: 0 auto;
 }
 
+.heading-line-left::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.1rem;
+  background-color: #ED3B3B;
+}
+
+.heading-line-left::after {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 0.3rem;
+  transform: translateY(-0.3rem);
+  background-color: #ED3B3B;
+  border-radius: 50%;
+  margin-left: 1.8rem;
+}
+
 .topbar {
   color: #fff;
   padding: 10px;
@@ -12857,24 +12877,191 @@ textarea.form-control-lg {
   text-align: center;
 }
 
-.companies {
-  padding: 0 0 5rem 0;
-}
-.companies_logo-box {
-  max-width: 100%;
-  height: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
+/*--------------------------------------------------------------
+# Growth section start
+--------------------------------------------------------------*/
+/* Genaral */
+.title-center p {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.1em;
   text-align: center;
-  position: relative;
-}
-.companies_logo-box img {
-  height: 100%;
-}
-.companies_logo-box img:hover {
-  filter: grayscale(120);
+  color: #ED3B3B;
 }
 
+.sub-title-center h2 {
+  font-family: "Teko", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #151515;
+}
+
+.title p {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  left: 0;
+  color: #ED3B3B;
+}
+.title .heading-line-left {
+  text-align: left;
+}
+
+.sub-title h2 {
+  font-family: "Teko", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 60px;
+  color: #151515;
+}
+
+/* Styles for screens with a maximum width of 600 pixels */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .title-center p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sub-title-center h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .title p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sub-title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+}
+
+.heading-line-left::before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.1rem;
+  background-color: #ED3B3B;
+}
+
+.heading-line-left::after {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 0.3rem;
+  transform: translateY(-0.3rem);
+  background-color: #ED3B3B;
+  border-radius: 50%;
+  margin-left: 1.8rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth {
+    min-height: 1650px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .growth {
+    min-height: 1650px;
+  }
+}
+.growth .growth-content-header {
+  padding: 2rem;
+}
+.growth .growth-content-header .red-bold {
+  font-family: "Teko";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ED3B3B;
+}
+.growth .growth-content-header .growth-description {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+.growth .growth-content-header .growth-icon-area .growth-icon .icon {
+  background: #ED3B3B;
+  padding: 25px;
+}
+.growth .growth-content-header .growth-icon-area .growth-icon .text h5 {
+  font-family: "Teko";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151515;
+}
+.growth .growth-content-header .growth-icon-area .growth-icon .text p {
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+.growth .main-container .circle {
+  left: 0;
+  text-align: left;
+  margin-top: 120px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .growth .main-container .circle {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+.growth .main-container .circle .bg {
+  background: #ED3B3B;
+  border-radius: 50%;
+}
+.growth .main-container .inner-div {
+  position: absolute;
+  right: 0px;
+  left: auto;
+  top: 0px;
+  z-index: 1; /* Set z-index to ensure it's above other elements */
+}
+
+/* Styles for screens with a maximum width of 767.98 pixels */
+@media only screen and (max-width: 767.98px) {
+  .growth-content-header {
+    padding: 0.5rem;
+  }
+  .img-none {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
